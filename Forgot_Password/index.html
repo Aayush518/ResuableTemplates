@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <strong>Enter your password</strong>
+      <div class="header">
+         <div class="logo">
+            <img src="code_net.jpg" alt="">
+         </div>
+         <div class="info">
+            <span>Business Account</span>
+            <span>Code Net</span>
+         </div>
+      </div>
+      <div class="input-section">
+         <label for="pass">Password</label>
+         <div class="input-wrap">
+            <div class="input-box">
+               <i class="fa fa-lock"></i>
+               <input type="password" placeholder="Enter password here" name="pass" id="pass">
+            </div>
+            <i id="eye" onclick="showpass()" class="fa fa-eye"></i>
+            <i id="eye-slash" onclick="hidepass()" class="fa fa-eye-slash"></i>
+
+         </div>
+         <div class="footer">
+            <input type="checkbox" name="check-box">
+            <label>Stay signed in</label>
+            <button>Continue</button>
+         </div>
+      </div>
+   </div>
+   <script>
+      function showpass() {
+         document.getElementById("pass").type = 'text';
+         document.getElementById("eye").style.display = 'none';
+         document.getElementById("eye-slash").style.display = 'block';
+      }
+      function hidepass() {
+         document.getElementById("pass").type = 'password';
+         document.getElementById("eye").style.display = 'block';
+         document.getElementById("eye-slash").style.display = 'none';
+      }
+   </script>
+</body>
+
+</html>
