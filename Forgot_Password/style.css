@@ -14,7 +14,7 @@ body {
    align-items: center;
    justify-content: center;
    min-height: 100vh;
-   background: #f1f3f8;
+   background: rgb(216, 218, 231);
 }
 
 body::-webkit-scrollbar {
